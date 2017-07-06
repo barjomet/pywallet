@@ -72,7 +72,7 @@ import os.path
 import platform
 
 max_version = 81000
-addrtype = 0
+addrtype = 28
 json_db = {}
 private_keys = []
 private_hex_keys = []
@@ -84,6 +84,7 @@ aversions = {};
 for i in range(256):
 	aversions[i] = "version %d" % i;
 aversions[0] = 'Bitcoin';
+aversions[28] = 'Compcoin';
 aversions[48] = 'Litecoin';
 aversions[52] = 'Namecoin';
 aversions[111] = 'Testnet';
